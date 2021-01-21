@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book website </title>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+
+*{
+	margin: 0px;
+	padding: 0px;
+	
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+.container
+{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("back.png");
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+
+}
+
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+
+}
+
+.logo{
+	width: 50px;
+	cursor: pointer;
+}
+.menu-icon{
+	width: 30px;
+	cursor: pointer;
+	margin-left: 40px;
+}
+nav{
+	flex: 1;
+	text-align:right;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: blue;
+	font-size: 23px;
+}
+
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+
+}
+
+.col{
+	flex-basis: 70%;
+}
+
+.col1{
+	padding-left: 10%;
+}
+
+h1{
+	color: #fff;
+	font-size: 100px;
+}
+p{
+	color: #fff;
+	font-size: 11px;
+	line-height: 15px;
+}
+button{
+	width: 140px;
+	color: black;
+	font-size: 12px;
+	padding: 12px 0;
+	background: #fff;
+	border-radius: 50px;
+	border: 0;
+	font-weight: bolder;
+	margin-top: 30px;
+	outline: none;
+
+}
+
+.card{
+	width: 200px;
+	height: 230px;
+	box-sizing: border-box;
+	padding: 15px 25px;
+	cursor: pointer;
+	border-radius: 15px;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	margin: 10px 15px;
+	transition: transform 0.5s;
+}
+
+.card1{
+	background-image: url(pic-1.png);
+}
+
+.card2{
+	background-image: url(pic-2.png);
+}
+
+.card3{
+	background-image: url(pic-3.png);
+}
+
+.card4{
+	background-image: url(pic-4.png);
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+h5{
+	color: white;
+	text-shadow: 0 0 5px #999;
+	padding-bottom: 30px;
+}
+
+.card p{
+	text-shadow: 0 0 5px ##000;
+	font-size: 10px;
+}
+
+</style>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="logo.png" class="logo">
+			<nav>
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="login page.html">LOGIN</a></li>
+					<li><a href="">REGISTER</a></li>
+				</ul>
+			</nav>
+			<img src="menu.png" class="menu-icon">
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<h1> Bookshelf</h1>
+				<p> lorem 20dfb rgdfs gfsdfgsergdaesdfer fsedfesrg wdvsxdfv  efdcv  rwfsdvxc  t4vc  egsfdv  hgdawegrth</p>
+				<button type="button">Explore</button>
+			</div>
+			<div class="col col1">
+				<div class="card card1">
+					<h5>Stroy books</h5>
+					<p>This collection of books conatins huge knowledge and will teach you the moral and etics  </p>
+				</div>
+
+				<div class="card card2">
+					<h5>Fantasy book</h5>
+					<p>This collection of books conatins huge knowledge and will teach you the moral and etics  </p>
+				</div>
+
+				<div class="card card3">
+					<h5>Comic Books</h5>
+					<p>he stories in comic books and graphic novels are presented to the reader through engaging, sequential narrative art  </p>
+				</div>
+
+				<div class="card card4">
+					<h5>Mystery Books</h5>
+					<p>The plot always revolves around a crime of sorts that must be solved—or foiled—by the protagonists.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+</body>
+</html>

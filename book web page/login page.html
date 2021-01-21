@@ -1,0 +1,128 @@
+<html>
+<head>
+	<title> login page</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<style type="text/css">
+
+</head>
+
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		
+		background: linear-gradient(228deg,#090979, #201b7d, #00ff33); 
+		font-family: 'Roboto Mono', sans-serif;
+
+	}
+
+	.container{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 400px;
+		background: #aa00ff;
+		border-radius:40px;
+	}
+
+	.container h1{
+		text-align: center;
+		padding: 0 0 20px 0;
+		border-bottom: 1px solid silver;
+	}
+
+	.container form{
+		padding: 0 40px;
+		box-sizing: border-box;
+
+	}
+
+	form .txt-field{
+		position: relative;
+		margin: 30px 0;
+		border-bottom: 2px solid grey;
+
+
+
+	}
+
+	form label{
+
+		padding-left: 9px;
+
+	}
+
+	
+
+
+
+	.txt-field input:focus ~ label,
+	.txt-field input:valid ~ label{
+		top:5px;
+		color:black;
+		font-weight: bolder;
+	}
+
+	.txt-field input{
+		width: 100%;
+		padding: 0 5px;
+		height: 40px;
+		font-size: 15px;
+		border-radius: 20px;
+		outline: none;
+		
+
+	}
+
+
+	.pwd-forget{
+		padding-bottom: 13px;
+	}
+
+	.pwd-forget a{
+		color: white;
+		text-decoration: none;
+
+	}
+
+	input[type="submit"]{
+		width: 180px;
+		height: 50px;
+		border-radius: 30%;
+		border: 1px solid;
+		background: #3260a8;
+		cursor: pointer;
+		font-size: 24px;
+		font-weight: bold;
+		outline: none;
+
+
+	}
+
+
+
+</style>
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<form method="post" action="sample.html">
+			<div class="txt-field">
+				<input type="text" required="">
+				<label> Username </label>
+			</div>
+
+			<div class="txt-field">
+				<input type="password" required="">
+				<label> Password </label>
+			</div>
+
+			<div class="pwd-forget"><a href="">Forgot Password? click me</a> </div>
+			<input type="submit" value="Login" >
+
+
+		</form>
+</body>
+</html>
