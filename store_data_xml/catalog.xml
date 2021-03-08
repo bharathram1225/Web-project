@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="catalogstyle.xsl"?>
+<student>
+  <bio>
+    <name>R Bharath</name>
+    <class>MCA A </class>
+    <gender>Male</gender>
+    <college>RVCE</college>
+  </bio>
+  <bio>
+    <name>Uday</name>
+    <class>BCA B</class>
+    <gender>Male</gender>
+    <college>BMSIT</college>
+  </bio>
+  <bio>
+    <name>Isha</name>
+    <class>B Tech</class>
+    <gender>Female</gender>
+    <college>MSRIT</college>
+  </bio>
+  <bio>
+    <name>Bargavi</name>
+    <class>BCOM</class>
+    <gender>Female</gender>
+    <college>PESIT</college>
+  </bio>
+  
+</student>
+
