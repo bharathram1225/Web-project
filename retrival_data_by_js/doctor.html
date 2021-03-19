@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<style type="text/css">
+			table,th,td{
+				border:1px solid black;
+				border-collapse: collapse;
+	
+			}
+		</style>
+	</head>
+	<body>
+		<button type="button" value="click me" onclick="doctor()">click me</button>
+		
+		<br>
+
+		<table id="tableid">
+		</table>
+
+		<br>
+		
+	
+		<script>
+			function doctor()
+				{
+				var objreq = new XMLHttpRequest();
+				objreq.onreadystatechange=function()
+					{
+						if(this.readyState == 4 && this.status == 200)
+						{
+							myfunction(this);
+						}
+					};
+					objreq.open("GET","student.xml",true)
+					objreq.send();
+				}
+				
+				function myfunction(xml)
+				{
+					var l;
+					var xmldoc = xml.responseXML;
+					var table="<tr><th>did</th><th>name</th></tr>";
+					var x=xmldoc.getElementsByTagName("doctors");
+					for(i=0;i<x.length;i++)
+						{
+							table +="<tr><td>" + x[i].getElementsByTagName("did")[0].childNodes[0].nodeValue + "</td><td>" + x[i].getElementsByTagName("did")[0].childNodes[0].nodeValue + "</td></tr>";
+							
+						}
+
+						document.getElementById("tableid").innerHTML = table;
+				
+				}
+			
+		</script>
+	</body>
+</html>
+
