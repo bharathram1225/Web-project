@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<style type="text/css">
-			table,th,td{
+		
+	</head>
+	<style>
+			table,th,td {
 				border:1px solid black;
 				border-collapse: collapse;
 	
 			}
-		</style>
-	</head>
+	</style>
 	<body>
-		<button type="button" value="click me" onclick="doctor()">click me</button>
+		<button type="button" value="click me" onclick="doctorfun()">click me</button>
 		
 		<br>
 
@@ -21,29 +22,30 @@
 		
 	
 		<script>
-			function doctor()
+			function doctorfun()
 				{
 				var objreq = new XMLHttpRequest();
-				objreq.onreadystatechange=function()
+				objreq.onreadystatechange = function()
 					{
 						if(this.readyState == 4 && this.status == 200)
 						{
 							myfunction(this);
 						}
 					};
-					objreq.open("GET","student.xml",true)
+					objreq.open("GET", "student.xml", true);
 					objreq.send();
 				}
 				
 				function myfunction(xml)
 				{
-					var l;
+					var i;
 					var xmldoc = xml.responseXML;
 					var table="<tr><th>did</th><th>name</th></tr>";
-					var x=xmldoc.getElementsByTagName("doctors");
-					for(i=0;i<x.length;i++)
+					var x = xmldoc.getElementsByTagName("doctors");
+					for(i = 0; i < x.length; i++)
 						{
-							table +="<tr><td>" + x[i].getElementsByTagName("did")[0].childNodes[0].nodeValue + "</td><td>" + x[i].getElementsByTagName("did")[0].childNodes[0].nodeValue + "</td></tr>";
+							table +="<tr><td>" + x[i].getElementsByTagName("did")[0].childNodes[0].nodeValue + 
+							"</td><td>" + x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</td></tr>";
 							
 						}
 
@@ -54,4 +56,3 @@
 		</script>
 	</body>
 </html>
-
