@@ -7,48 +7,55 @@
 <!ELEMENT phoneno (#PCDATA)>
 ]>
 
+
 <hospital>
 	<doctors>
 		<did>001</did>
 		<name>Dr.Bharath</name>
 		<address>Bangalore</address>
 		<phoneno>9845612789</phoneno>
-	<doctors>
+	</doctors>
 	<doctors>
 		<did>002</did>
 		<name>Dr.Shivaputra</name>
 		<address>Hongkong</address>
 		<phoneno>27867256256</phoneno>
-	<doctors>	<doctors>
+	</doctors>	
+	<doctors>
 		<did>003</did>
 		<name>Dr.Lakshmikath</name>
 		<address>Yelahanka</address>
 		<phoneno>8756677678</phoneno>
-	<doctors>	<doctors>
+	</doctors>	
+	<doctors>
 		<did>004</did>
 		<name>Dr.Vishal</name>
 		<address>Yeshwanthpura</address>
 		<phoneno>9845612789</phoneno>
-	<doctors>	<doctors>
+	</doctors>	
+	<doctors>
 		<did>005</did>
 		<name>Dr.Uday</name>
 		<address>Bangalore</address>
 		<phoneno>9845612789</phoneno>
-	<doctors>	<doctors>
+	</doctors>	
+	<doctors>
 		<did>006</did>
 		<name>Dr.Yogi</name>
 		<address>Bangkok</address>
 		<phoneno>9845612789</phoneno>
-	<doctors>	<doctors>
+	</doctors>	
+	<doctors>
 		<did>007</did>
 		<name>Dr.Viwas</name>
 		<address>Bangalore</address>
 		<phoneno>9845612789</phoneno>
-	<doctors>	<doctors>
+	</doctors>	
+	<doctors>
 		<did>008</did>
 		<name>Dr.rajanna</name>
 		<address>London</address>
 		<phoneno>8880798880</phoneno>
-	<doctors>
+	</doctors>
 </hospital>
 
