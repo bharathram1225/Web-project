@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hospital [
-<!ELEMENT doctors(did,name,address,phomeno)>
-<!ELEMENT did (#PCDATA)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT address (#PCDATA)>
-<!ELEMENT phoneno (#PCDATA)>
-]>
+
 
 <hospital>
 	<doctors>
