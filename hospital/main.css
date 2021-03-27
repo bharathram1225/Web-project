@@ -232,3 +232,21 @@ body{
 .footer .text{
   color: #000;
 }
+
+
+
+.bar{
+
+	text-align:center;
+	float: right;
+}
+
+
+svg{
+
+	position: relative;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+}
