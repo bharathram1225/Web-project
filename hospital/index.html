@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/ec5ef0dc98.js" crossorigin="anonymous"></script>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -38,6 +39,7 @@
 			<h1>24/7 Care is Available</h1>
 			<h2>Don't delay your care at Mera Hospital</h2>
 			<a href="#" class="main-btn">Lets know us</a>
+			
 		</div>
     </section>
     
@@ -55,8 +57,11 @@
 						<div class="icon">
 							<i class="fas fa-tooth"></i>
 						</div>
-						<h4> Endodontists </h4>
-						<p>The Benefits of Saving Your Natural Teeth. othing looks, feels or functions like your natural teeth, and endodontists are the experts in saving teeth. Keep smiling and eating the foods you love with endodontic treatment that can relieve your pain and save your teeth. </p>
+						<div id="demo">
+							<h4> Endodontists </h4>
+							<p>The Benefits of Saving Your Natural Teeth. othing looks, feels or functions like your natural teeth, and endodontists are the experts in saving teeth. Keep smiling and eating the foods you love with endodontic treatment that can relieve your pain and save your teeth. </p>
+						</div>
+						
 					</div>
 				</div>
 				
@@ -65,8 +70,11 @@
 						<div class="icon">
 							<i class="fas fa-lungs"></i>
 						</div>
-						<h4> Pulmonology </h4>
-						<p>Pulmonology is a super specility department of internal mendicine that deals witht eh prevention, diagnosis and treatment of problems that affect lungs. Our consultant has trained skills in evaluting patients with symptoms like breaklessness, cough, chestpain, sleepiness etc to provide quick care </p>
+						<div>
+							<h4> Pulmonology </h4>
+							<p>Pulmonology is a super specility department of internal mendicine that deals witht eh prevention, diagnosis and treatment of problems that affect lungs. Our consultant has trained skills in evaluting patients with symptoms like breaklessness, cough, chestpain, sleepiness etc to provide quick care </p>
+						</div>
+						
 					</div>
 				</div>
 				
@@ -132,9 +140,8 @@
 						<img src="images/1.jpg" alt="">
 						<div class="camp-text">
 							<div>
-								<h3 class="card-title"> abc def</h3>
-								<p class="card-text"> abc c cn cnc c c kjf
-								m ifdj iufdj idfjkcv d cd cj</p>
+								<h3 class="card-title">BIJAPUR</h3>
+								<p class="card-text">Camp at Alanda</p>
 							</div>
 						</div>
 					</div>
@@ -146,9 +153,8 @@
 						<img src="images/2.jpg" alt="">
 						<div class="camp-text">
 							<div>
-								<h3 class="card-title"> abc def</h3>
-								<p class="card-text"> abc c cn cnc c c kjf
-								m ifdj iufdj idfjkcv d cd cj</p>
+								<h3 class="card-title">BIDAR</h3>
+								<p class="card-text">Camp at Camatana</p>
 							</div>
 						</div>
 					</div>
@@ -160,9 +166,8 @@
 						<img src="images/3.jpg" alt="">
 						<div class="camp-text">
 							<div>
-								<h3 class="card-title"> abc def</h3>
-								<p class="card-text"> abc c cn cnc c c kjf
-								m ifdj iufdj idfjkcv d cd cj</p>
+								<h3 class="card-title">BANGALORE</h3>
+								<p class="card-text">Camp at Jayanagar</p>
 							</div>
 						</div>
 					</div>
@@ -174,9 +179,8 @@
 						<img src="images/4.jpg" alt="">
 						<div class="camp-text">
 							<div>
-								<h3 class="card-title"> abc def</h3>
-								<p class="card-text"> abc c cn cnc c c kjf
-								m ifdj iufdj idfjkcv d cd cj</p>
+								<h3 class="card-title">RAICHUR</h3>
+								<p class="card-text">Camp at Marakal</p>
 							</div>
 						</div>
 					</div>
@@ -188,9 +192,8 @@
 						<img src="images/5.jpg" alt="">
 						<div class="camp-text">
 							<div>
-								<h3 class="card-title"> abc def</h3>
-								<p class="card-text"> abc c cn cnc c c kjf
-								m ifdj iufdj idfjkcv d cd cj</p>
+								<h3 class="card-title">GULABARGA</h3>
+								<p class="card-text">Camp at Chincholi</p>
 							</div>
 						</div>
 					</div>
@@ -202,9 +205,8 @@
 						<img src="images/6.jpg" alt="">
 						<div class="camp-text">
 							<div>
-								<h3 class="card-title"> abc def</h3>
-								<p class="card-text"> abc c cn cnc c c kjf
-								m ifdj iufdj idfjkcv d cd cj</p>
+								<h3 class="card-title">BELGUM</h3>
+								<p class="card-text">Camp at Bagiwadi</p>
 							</div>
 						</div>
 					</div>
@@ -216,9 +218,8 @@
 						<img src="images/7.jpg" alt="">
 						<div class="camp-text">
 							<div>
-								<h3 class="card-title"> abc def</h3>
-								<p class="card-text"> abc c cn cnc c c kjf
-								m ifdj iufdj idfjkcv d cd cj</p>
+								<h3 class="card-title">MYSORE</h3>
+								<p class="card-text">Nanjangudu</p>
 							</div>
 						</div>
 					</div>
@@ -230,15 +231,29 @@
 						<img src="images/8.jpg" alt="">
 						<div class="camp-text">
 							<div>
-								<h3 class="card-title"> abc def</h3>
-								<p class="card-text"> abc c cn cnc c c kjf
-								m ifdj iufdj idfjkcv d cd cj</p>
+								<h3 class="card-title">KOLAR</h3>
+								<p class="card-text">Camp at hosahalli</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+    </section>
+
+    <section class="container">
+    	<div class="row">
+    		<div class="col-lg-12 col-md-1 col-sm-1" class="bar">
+    			<div class="container py-3">
+    				<h1 class="text-center py-2">STATATICS OF THE HOSPITAL</h1>
+    				<svg id="svg" width="600" height="300">
+    	</svg>
+	<script type="text/javascript" src="myscript.js"></script>
+    			</div>
+    			
+    	
+    		</div>
+    	</div>
     </section>
     
     <footer class="footer py-4 mt-5">
@@ -268,7 +283,47 @@
     </div>
 </footer>
 
-   
+
+
+
+
+
+
+
+   <script>
+			function doctorfun()
+				{
+				var objreq = new XMLHttpRequest();
+				objreq.onreadystatechange = function()
+					{
+						if(this.readyState == 4 && this.status == 200)
+						{
+							myfunction(this);
+						}
+					};
+					objreq.open("GET", "servicesfile.xml", true);
+					objreq.send();
+				}
+				
+				function myfunction(xml)
+				{
+					//var i;
+					var xmldoc = xml.responseXML;
+					//var table="<tr><th>did</th><th>name</th></tr>";
+					var x = xmldoc.getElementsByTagName("cards");
+					//for(i = 0; i < x.length; i++)
+						//{
+							
+							table +="<h4>" + x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + 
+							"</h4><p>" + x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue + "</p>";
+							
+						//}
+
+						document.getElementById("demo").innerHTML = table;
+				
+				//}
+			
+		</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
