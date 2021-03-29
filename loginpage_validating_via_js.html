@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<h1>Simple login page</h1>
+
+	<form>
+		username<input type="text" name="username" id="username"/>
+		password<input type="password" name="password" id="password"/>
+		<input type="submit" value="Submit" onclick="check()"/>
+		<input type="reset" value="reset" />
+
+	</form>
+
+	<script type="text/javascript">
+
+		var ch_username = /^[1A-ZA-Z0-90-9A-ZA-ZA-Z0-90-9]{10}$/;
+		var ch_password = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+
+		function check()
+		{
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+			if (!ch_username.test(username) || !(ch_password.test(password)))
+			{
+				alert("Incorrect user id/ password")
+			}
+
+			else
+			{
+				alert("Welcome to rvce");
+				var d = new Date();
+				document.write(d)
+				document.body.bgColor="red";
+				alert("Welcome to rvce new");
+			}
+		}
+
+	</script>
+</body>
+</html>
